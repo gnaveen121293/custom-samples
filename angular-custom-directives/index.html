@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>how r u</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+<h1>hellow custom directives</h1>
+<div ng-controller="myController">
+
+<br>
+
+
+
+<div ng-repeat=" user in userDetails1">
+    	<my-customer-details-directives 
+
+    	user-name="{{companyName}}"
+    	user-details="user"
+    	 change="changeCompanyName()"
+
+    	> </my-customer-details-directives>
+		
+</div>
+</div>
+</div>
+  <script src="https://code.angularjs.org/1.6.4/angular.js" type="text/javascript"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+
+</body>
+</html>

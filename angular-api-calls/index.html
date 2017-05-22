@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>api examples</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+<h1> api application</h1>
+<div ng-controller="myController">
+
+<h1>{{message}}</h1>
+<label>
+Wheather details report</label>
+<br>
+<input type="button" value=" Get wheather report"  ng-click="getWeatherDetails()">
+</div>
+</div>
+  <script src="https://code.angularjs.org/1.6.4/angular.js" type="text/javascript"></script>
+
+ 
+<script type="text/javascript" src="https://code.angularjs.org/1.6.4/angular-resource.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
